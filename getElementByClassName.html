@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>getElementByClassName</title>
+        <script type="text/javascript">
+        function fn1(){
+            //By using id you can select a specific element only once.
+            //By using tags you have to access all the elements with the tags if you don't index them
+            //By using class you can customise and select exactly which attribute and tags you want to modify 
+            var element = document.getElementsByClassName("mypara");//element is an array.
+            for(var i=0;i<element.length;i++){
+                element[i].style.color="yellow";
+            }
+            var element1 = document.getElementsByClassName("mypara1");
+            for(var j=0;j<element1.length;j++){
+                element1[j].style.fontStyle="italic"
+            }
+        }
+        </script>
+    </head>
+    <body>
+    <p class="mypara">paragraph1</p>
+    <p class="mypara1">paragraph2</p>
+    <p class="mypara">paragraph3</p>
+    <p class="mypara1">paragraph4</p>
+    <p class="mypara">paragraph5</p>
+    <a href="#">this is a secret link..sshhh</a>
+    <br>
+    <button onclick="fn1()">Magic happens</button>
+    </body>
+</html>

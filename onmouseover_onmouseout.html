@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>onmouseover_onmouseout</title>
+        <script type="text/javascript">
+            function setNewImage(){
+                    document.getElementById("img").src = "Screenshot (81).png"
+            } 
+            function setOldImage(){
+                document.getElementById("img").src = "dp.jpg"
+            }
+        </script>
+    </head>
+    <body>
+        <img onmouseover="setNewImage()" onmouseout="setOldImage()" src="dp.jpg" id="img" alt="dp.jpg" width="300"/>
+    </body>
+</html>
