@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            //Document Object Manipulation -- Element, Atrribute, Text in an HTML document can be modified using Js.
+            function buttonClick()
+            {
+               document.getElementById("heading").innerHTML="messi";//it changes "Some Random Text" to messi
+               var x = document.getElementById("heading").innerHTML;//x stores "Some Random Text" fetched from below
+                //document.write("button was clicked");//onclick maps the events like this event will happen when a certain is pressed.
+            }
+            function fn1(){
+                var str = document.getElementById("text1").value;
+                var password1 = document.getElementById("text2").value;
+                alert("the value inside the textbox is "+str);
+                if(str===password1){
+                    document.write("your password is "+password1);
+                }
+                else{
+                    document.write("your password and username are different");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="buttonClick()"> click here </button>
+        <h2 id="heading">Some Random Text</h2>
+        <input type="text" id="text1" placeholder="Enter anything">
+        <br>
+        <input type="password" id="text2" placeholder="Enter Password">
+        <br>
+        <button onclick="fn1()" id="btn1">Click Me</button>
+    </body>
+</html>

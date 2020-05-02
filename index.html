@@ -1,0 +1,65 @@
+<html>
+    <head> 
+        <title>
+            javascript tutorial
+        </title>
+        <script type="text/javascript">
+            //alert( hello world );//html tags don't work in alert function 
+            //javascript is an interpreted language, dynamic, loosely typed...semicolon is not mandatory but if you want to write multiple lines of code then u can use it.
+            //loosely typed means you don't have to declare data type and dynamic means javascript itself decides the data type likee python.
+            // client/browser side is the front-end and server side is the backend.
+            // Identifier(name of variable,function, etc) should not be predefined character.
+            //Variables of primitive data type
+            var x = 9;//number
+            var name = "Auroshis";//String
+            var y = true;//Boolean
+            /*document.write("<h1> hello world hey </h1>\n");
+            document.write(name+"\n");
+            document.write(y);*/
+            //The associativity of the operators is from left to right in  case of arithmetic and concatenation.
+            //function
+            function add(a,b){
+                var total = a+b;
+                //document.write("sum "+total);
+            }
+            add(2,1);
+            //It's not mandatory to use "var" keyword but if you use var keyword it automatically becomes global variable.
+            //Local variables are variables which are limited to a function.
+            //There is a strict mode in browsers due to which global variables declared inside a function without var keyword can't be accessed.
+            //arrays
+            //arrays in javascript are similar to python lists, indexing starts from 0
+            /*var arr = ['auro',1,2];//push pop is used instead of add remove
+            for(var i =0;i<arr.length;i++){
+                document.write(arr[i]);
+            }*/
+            //Objects
+            //the syntax of similar to dictionary in python
+            /*var Car = {
+                name : "Audi",
+                model : "R8",
+                printCar : function()
+                {
+                    return "hey there the car name is "+Car.name;//if you don't returnn anything it will show undefined
+                }//if you write document.write inside this function then you don't have to write that while calling the function, else it will show "undefined"
+            }
+            document.write(Car.printCar());
+            document.write(Car.model)*/
+            //another way for objects--- function based
+            function trucks(truck_name)//not  working
+            {
+                this.truck_name = truck_name;
+                this.printtruck = function()
+                {
+                    document.write(truck_name);
+                }
+            }
+            var c1 = new trucks(benz);
+            c1.printtruck();
+            document.write(c1.truck_name);
+        </script>
+          
+    </head>
+    <body>
+        hi there in the body.
+    </body>
+</html>  
